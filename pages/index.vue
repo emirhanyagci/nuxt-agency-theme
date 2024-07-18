@@ -1,25 +1,14 @@
 <script setup></script>
 <template>
-  <!--/ Carousel Star /-->
-  <Carousel />
-  <!--/ Carousel end /-->
+  <CarouselHero />
 
-  <!--/ Services Star /-->
-  <Services />
-  <!--/ Services End /-->
-  <!--/ Property Star /-->
-  <Property />
-  <!--/ Property End /-->
+  <ServicesSection />
 
-  <!--/ Agents Star /-->
-  <Agents />
-  <!--/ Agents End /-->
+  <PropertiesSection />
 
-  <!--/ News Star /-->
-  <News />
-  <!--/ News End /-->
+  <AgentsSection />
 
-  <!--/ Testimonials Star /-->
-  <Testimonials />
-  <!--/ Testimonials End /-->
+  <NewsSection />
+
+  <TestimonialsSection />
 </template>
