@@ -14,4 +14,12 @@ watch(
   }
 );
 </script>
-<template></template>
+<template>
+  <!--/ Form Search Star /-->
+  <PropertiesSearchDrawer />
+  <NavBar />
+  <NuxtPage />
+  <Footer />
+  <BackToTop />
+  <PreLoader />
+</template>
