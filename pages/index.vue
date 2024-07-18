@@ -3,4 +3,5 @@
   <CarouselHero />
   <ServicesSection />
   <PropertiesSection />
+  <AgentsSection />
 </template>
