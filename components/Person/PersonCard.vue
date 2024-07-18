@@ -1,7 +1,7 @@
 <script setup>
-const { agent } = defineProps(["agent"]);
-const { name, imageUrl, content, phone, email } = agent;
-const agentSocials = [
+const { person } = defineProps(["person"]);
+const { name, imageUrl, content, phone, email, to } = person;
+const personSocial = [
   { icon: "fa-facebook", to: "#" },
   { icon: "fa-twitter", to: "#" },
   { icon: "fa-instagram", to: "#" },
@@ -20,9 +20,7 @@ const agentSocials = [
         <div class="card-header-d">
           <div class="card-title-d align-self-center">
             <h3 class="title-d">
-              <NuxtLink to="/agent-single" class="link-two">{{
-                name
-              }}</NuxtLink>
+              <NuxtLink :to class="link-two">{{ name }}</NuxtLink>
             </h3>
           </div>
         </div>
@@ -37,7 +35,7 @@ const agentSocials = [
         </div>
         <div class="card-footer-d">
           <div class="socials-footer d-flex justify-content-center">
-            <AgentsCardSocials :socials="agentSocials" />
+            <PersonCardSocials :socials="personSocial" />
           </div>
         </div>
       </div>

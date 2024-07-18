@@ -7,6 +7,7 @@ const agentItems = [
       "Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.",
     phone: "+54 356 945234",
     email: "agents@example.com",
+    to: "/agent-single",
   },
   {
     name: "Stiven Spilver Darw",
@@ -15,6 +16,7 @@ const agentItems = [
       "Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.",
     phone: "+54 356 945234",
     email: "agents@example.com",
+    to: "/agent-single",
   },
   {
     name: "Emma Toledo Cascada",
@@ -23,6 +25,7 @@ const agentItems = [
       "Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.",
     phone: "+54 356 945234",
     email: "agents@example.com",
+    to: "/agent-single",
   },
 ];
 </script>
@@ -45,7 +48,11 @@ const agentItems = [
         </div>
       </div>
       <div class="row">
-        <AgentsCard v-for="(agent, index) in agentItems" :key="index" :agent />
+        <PersonCard
+          v-for="(agent, index) in agentItems"
+          :key="index"
+          :person="agent"
+        />
       </div>
     </div>
   </section>
