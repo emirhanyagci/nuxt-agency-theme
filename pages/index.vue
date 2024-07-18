@@ -5,4 +5,5 @@
   <PropertiesSection />
   <AgentsSection />
   <NewsSection />
+  <TestimonialsSection />
 </template>
