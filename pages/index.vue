@@ -4,4 +4,5 @@
   <ServicesSection />
   <PropertiesSection />
   <AgentsSection />
+  <NewsSection />
 </template>
