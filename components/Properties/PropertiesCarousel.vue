@@ -31,7 +31,7 @@ const carouselItems = [
     garages: 1,
   },
   {
-    id: 245,
+    id: 221,
     imageUrl: "/img/property-7.jpg",
     location: "West \nCentral Park",
     price: 12000,
@@ -44,6 +44,12 @@ const carouselItems = [
 </script>
 <template>
   <div id="property-carousel" class="owl-carousel owl-theme">
-    <PropertiesCard v-for="property in carouselItems" :property="property" />
+    <div
+      v-for="property in carouselItems"
+      :key="property.id"
+      class="carousel-item-b"
+    >
+      <PropertiesCard :property="property" />
+    </div>
   </div>
 </template>
