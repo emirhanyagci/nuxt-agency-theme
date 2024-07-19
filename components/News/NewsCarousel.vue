@@ -34,6 +34,12 @@ const newsItems = [
 </script>
 <template>
   <div id="new-carousel" class="owl-carousel owl-theme">
-    <NewsCard v-for="(news, index) in newsItems" :key="index" :news="news" />
+    <div
+      v-for="(news, index) in newsItems"
+      :key="index"
+      class="carousel-item-c"
+    >
+      <NewsCard :news="news" />
+    </div>
   </div>
 </template>
