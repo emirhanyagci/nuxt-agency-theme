@@ -1,5 +1,5 @@
 <template>
-  <a class="navbar-brand text-brand" href="index.html"
-    >Estate<span class="color-b">Agency</span></a
+  <NuxtLink class="navbar-brand text-brand" to="/"
+    >Estate<span class="color-b">Agency</span></NuxtLink
   >
 </template>
