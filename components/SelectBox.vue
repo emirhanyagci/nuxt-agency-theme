@@ -1,9 +1,5 @@
 <script setup>
-const { id, options, placeholder } = defineProps([
-  "id",
-  "options",
-  "placeholder",
-]);
+const { id, options } = defineProps(["id", "options"]);
 console.log(options);
 </script>
 <template>
