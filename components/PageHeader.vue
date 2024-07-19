@@ -1,9 +1,11 @@
 <script setup>
-const router = useRouter();
-const currentRoute = ref(router.currentRoute.value.name);
+const route = useRoute();
 
-currentRoute.value =
-  currentRoute.value.charAt(0).toUpperCase() + currentRoute.value.slice(1);
+const currentRoutes = route.name.split("-");
+const parentRoutes = currentRoutes.slice(0, currentRoutes.length - 1);
+const lastRoute = parentRoutes.length
+  ? route.params.id
+  : currentRoutes[currentRoutes.length - 1];
 </script>
 <template>
   <section class="intro-single">
@@ -28,8 +30,15 @@ currentRoute.value =
               <li class="breadcrumb-item">
                 <a href="#">Home</a>
               </li>
+              <li
+                v-for="(route, index) in parentRoutes"
+                :key="index"
+                class="breadcrumb-item"
+              >
+                <a href="#">{{ route }}</a>
+              </li>
               <li class="breadcrumb-item active" aria-current="page">
-                {{ currentRoute }}
+                {{ lastRoute }}
               </li>
             </ol>
           </nav>
