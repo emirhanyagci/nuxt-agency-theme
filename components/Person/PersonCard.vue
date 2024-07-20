@@ -1,13 +1,6 @@
 <script setup>
 const { person } = defineProps(["person"]);
 const { name, imageUrl, content, phone, email, to } = person;
-const personSocial = [
-  { icon: "fa-facebook", to: "#" },
-  { icon: "fa-twitter", to: "#" },
-  { icon: "fa-instagram", to: "#" },
-  { icon: "fa-pinterest-p", to: "#" },
-  { icon: "fa-dribbble", to: "#" },
-];
 </script>
 
 <template>
@@ -35,7 +28,7 @@ const personSocial = [
         </div>
         <div class="card-footer-d">
           <div class="socials-footer d-flex justify-content-center">
-            <PersonCardSocials :socials="personSocial" />
+            <PersonSocials />
           </div>
         </div>
       </div>

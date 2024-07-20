@@ -1,12 +1,5 @@
 <script setup>
 const { agent } = defineProps(["agent"]);
-const agentSocial = [
-  { icon: "fa-facebook", to: "#" },
-  { icon: "fa-twitter", to: "#" },
-  { icon: "fa-instagram", to: "#" },
-  { icon: "fa-pinterest-p", to: "#" },
-  { icon: "fa-dribbble", to: "#" },
-];
 </script>
 <template>
   <div class="row section-t3">
@@ -36,7 +29,7 @@ const agentSocial = [
           </li>
         </ul>
         <div class="socials-a">
-          <PersonCardSocials :socials="agentSocial" />
+          <PersonSocials />
         </div>
       </div>
     </div>
@@ -68,7 +61,7 @@ const agentSocial = [
               </div>
             </div>
             <div class="col-md-12">
-              <FormButton>Send Message</FormButton>
+              <FormButtonSecond>Send Message</FormButtonSecond>
             </div>
           </div>
         </form>

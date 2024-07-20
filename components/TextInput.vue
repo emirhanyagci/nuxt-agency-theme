@@ -5,6 +5,7 @@ const { placeholder, id } = defineProps(["placeholder", "id"]);
   <input
     type="text"
     class="form-control form-control-lg form-control-a"
+    required
     :placeholder
     :id
   />
